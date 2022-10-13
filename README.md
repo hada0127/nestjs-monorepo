@@ -1,23 +1,36 @@
 # nestjs
+
 nestjs monorepo 방식 + TypeORM + mysql
 
 ## test
+
 하위모듈만
+
 ```
 nest start api
+nest start admin
 ```
+
 watch 실행
+
 ```
 nest start api --watch
+nest start admin --watch
 ```
+
 ## build
+
 단일 실행파일로 생성되서 서버에서 의존성 체크 없이 바로 실행할 수 있음
+
 ```
 nest build api
+nest build admin
 ```
 
 ## clone 이후 설치
+
 루트 디렉토리에 .env 파일 생성
+
 ```
 API_PORT=3000
 ADMIN_PORT=3001
@@ -35,7 +48,9 @@ DB_SYNC=true
 ```
 
 ## 초기 설치(참고용)
+
 @nestjs/cli는 미설치된 경우에만 설치
+
 ```
 npm install -g @nestjs/cli
 yarn add @nestjs/typeorm typeorm mysql typeorm-naming-strategies class-transformer
@@ -46,5 +61,5 @@ nest g app admin
 nest g lib entity
 ```
 
-> ./apps/monorepo-nestjs-typeorm 폴더 제거
+> ./apps/monorepo-nestjs-typeorm 폴더 제거  
 > nest-cli.json 에서 monorepo-nestjs-typeorm 관련내용 제거
