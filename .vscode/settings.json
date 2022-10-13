@@ -1,0 +1,7 @@
+{
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "prettier.enable": true,
+  "prettier.tabWidth": 2
+}
